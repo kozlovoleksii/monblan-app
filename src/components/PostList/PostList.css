@@ -1,5 +1,5 @@
 .posts {
-  max-width:900px;
+  max-width: 900px;
   margin: 0 auto;
   border-radius: 6px;
 }
@@ -28,7 +28,7 @@
 
 .layout__btn {
   border: none;
-  background: transparent;
+  color: #3d8eda;
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.3s ease;
@@ -42,22 +42,24 @@
 
 .layout__btn.active {
   opacity: 1;
-  color: #3d8eda;
+  background: transparent;
 }
 
-.layout__btn.active img {
+.layout__btn:not(.active) img {
   filter: invert(55%) sepia(72%) saturate(500%) hue-rotate(180deg)
     brightness(95%) contrast(92%);
 }
 
-.posts__list--list {
+.posts__list--grid {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 16px;
   column-gap: 8px;
+  
 }
 
-.posts__list--grid {
-  flex-wrap: wrap;
+
+.posts__list--list {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
