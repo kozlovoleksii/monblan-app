@@ -25,7 +25,7 @@ export const PostList = ({ view, setView }) => {
         </button>
       </div>
       <div
-        className={`posts__list ${view === 'list' ? 'posts__list--list' : 'posts__list--grid'}`}
+        className={`${view === 'list' ? 'posts__list--list' : 'posts__list--grid'}`}
       >
         {posts.map((post) => (
           <PostCard key={post.id} post={post} view={view} />

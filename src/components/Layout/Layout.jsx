@@ -5,7 +5,7 @@ import { PostList } from '../PostList/PostList';
 import footerWave from '../../assets/images/footer-wave.png';
 
 export const Layout = () => {
-  const [view, setView] = useState('list');
+  const [view, setView] = useState('grid');
   return (
     <div className="layout">
       <Header />
