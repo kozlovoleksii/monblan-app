@@ -1,0 +1,64 @@
+.posts {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.posts__load {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.posts__load:hover {
+  background-color: rgba(0, 0, 255, 0.066);
+}
+
+.layout__controls {
+  display: flex;
+  gap: 21px;
+  justify-content: flex-end;
+  margin-bottom: 23px;
+}
+
+.layout__btn {
+  border: none;
+  color: #3d8eda;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.layout__btn img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+.layout__btn.active {
+  opacity: 1;
+  background: transparent;
+}
+
+.layout__btn:not(.active) img {
+  filter: invert(55%) sepia(72%) saturate(500%) hue-rotate(180deg)
+    brightness(95%) contrast(92%);
+}
+
+.posts__list--grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.posts__list--list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
